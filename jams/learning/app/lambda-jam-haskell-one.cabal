@@ -1,0 +1,23 @@
+name: lambda-jam-haskell-one
+version: 0.0.1
+cabal-version: >= 1.14.0
+build-type: Simple
+license-file: LICENSE-2.0
+copyright: Copyright 2013 LambdaJam 2013 Haskell Group (Jack Viers, Dariusz Pasciak, Daniel Santa Cruz)
+author: Jack Viers, Dariusz Pasciak, Daniel Santa Cruz
+maintainer: jackcviers@gmail.com
+stability: _alpha
+homepage: https://github.com/jackcviers/lambdajam2013/tree/master/jams/learning
+bug-reports: jackcviers@gmail.com
+package-url: https://github.com/jackcviers/lambdajam2013/archive/master.zip
+synopsis: An implementation of the K-Nearest-Neighbor classification algorithm using Euclidean Distance as the distance metric.
+description: A jam experiment from the Lambda Jam Chicago 2013 conference. The task this classifier was originally used for was to classify hand-written digits using bitmap similarities modeled as a vector of values of 0 (black) to 255 (white) representing a pixel in a 28 x 28 pixel grid.
+category: Executable
+tested-with: ghc@7.4.1
+
+Executable knn_lambda_jam
+	   extra-source-files: digitscheck.csv, digitssample.csv
+	   data-files: digitscheck.csv, digitssample.csv
+	   hs-source-dirs: ./src/App/
+	   main-is: Main.hs
+	   build-depends: csv >= 0.1.2g
