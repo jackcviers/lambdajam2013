@@ -1,0 +1,46 @@
+{
+  "name": "grunt-maze",
+  "description": "Maze Generator",
+  "version": "0.0.1",
+  "homepage": "https://github.com/jackcviers/lambdajam2013",
+  "author": {
+    "name": "Jack Viers and Daniel Santa Cruz",
+    "email": "jackcviers@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jackcviers/lambdajam2013.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jackcviers/lambdajam2013/issues"
+  },
+  "licenses": [
+    {
+      "type": "APACHE",
+      "url": "https://github.com/jackcviers/lambdajam2013/blob/master/LICENSE-APACHE"
+    }
+  ],
+  "main": "Gruntfile.js",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "~0.1.1",
+    "grunt-contrib-clean": "~0.4.0",
+    "grunt-contrib-nodeunit": "~0.1.2",
+    "grunt": "~0.4.1",
+    "underscore": "~1.5.1",
+    "request": "~2.22.0",
+    "grunt-contrib": "~0.7.0",
+    "grunt-coffeeify": "~0.1.3"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.1"
+  },
+  "keywords": [
+    "gruntplugin"
+  ]
+}
